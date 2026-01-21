@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculate App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <section class="snap" id="calcuapp">
+            <div class="page6">
+                <p class="heading1">برنامج حساب تكلفة البناء</p>
+                <p class="para">برنامج لحساب تكاليف بناء بركة السباحة بحسب حسبة هندسية من الشركة، يتيح إدخال أبعاد
+                    البركة ليحسب التكلفة والكمية التقديرية للمواد بشكل فوري.</p>
+                <p class="heading1">واجهة البرنامج</p>
+                <p class="para">يتميز البرنامج بواجهة بسيطة وسهلة الاستخدام، مصممة لإدخال أبعاد البركة والمواصفات
+                    المطلوبة بسهولة، مع عرض النتائج بشكل واضح ومنظم.</p>
+                <p class="heading1">الخصائص الرئيسية</p>
+                <p class="para"> إدخال أبعاد البركة بسهولة.</p>
+                <p class="para">حساب الكميات المطلوبة من المواد بشكل تلقائي بحسب الحسبة الهندسية من الشركة.</p>
+                <p class="para">عرض التكلفة الإجمالية بناءًا على المدخلات.</p>
+                <p class="para">إمكانية تعديل البيانات وإعادة الحساب بسرعة.</p>
+                <section class="snap" id="calcuapp1">
+                    <div class="page6">
+                        <p class="heading1">صور من البرنامج</p>
+                        <button class="openModal glass-btn" data-img="images/calcuapp/calcu1.png">واجهة
+                            البرنامج</button><br><br>
+                        <button class="openModal glass-btn" data-img="images/calcuapp/calcu2.png">صورة من البرنامج
+                            1</button><br><br>
+                        <button class="openModal glass-btn" data-img="images/calcuapp/calcu3.png">صورة من البرنامج
+                            2</button><br><br>
+                        <button class="openModal glass-btn" data-img="images/calcuapp/calcu4.png">صورة من البرنامج
+                            3</button><br><br>
+                        <button style="margin-top: 10px;" class="glass-btn"
+                            onclick="document.location='index.html'">العودة الى المشاريع</button><br><br>
+                    </div>
+                    <div id="imageModal" class="modal">
+                        <div class="modal-overlay"></div>
+
+                        <div class="modal-content">
+                            <img id="modalImg" src="" alt="">
+                            <button class="close-btn" style="color: black;">×</button>
+                        </div>
+                    </div>
+                    <script>
+                        const modal = document.getElementById("imageModal");
+                        const modalImg = document.getElementById("modalImg");
+                        const overlay = modal.querySelector(".modal-overlay");
+                        const closeBtn = modal.querySelector(".close-btn");
+
+                        document.querySelectorAll(".openModal").forEach(btn => {
+                            btn.addEventListener("click", () => {
+                                modalImg.src = btn.dataset.img;
+                                modal.style.display = "flex";
+                                document.body.style.overflow = "hidden";
+                            });
+                        });
+
+                        function closeModal() {
+                            modal.style.display = "none";
+                            modalImg.src = "";
+                            document.body.style.overflow = "";
+                        }
+
+                        closeBtn.onclick = closeModal;
+                        overlay.onclick = closeModal;
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                        crossorigin="anonymous"></script>
+</body>
+
+</html>

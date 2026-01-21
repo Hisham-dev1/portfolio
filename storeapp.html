@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <section class="snap" id="storeapp">
+            <div class="page6">
+                <p class="heading1">تطبيق متجر إلكتروني مع حجز المواعيد</p>
+                <p class="para">نموذج أولي لتطبيق جوال يجمع بين المتجر الإلكتروني وإمكانية حجز المواعيد، تم التركيز فيه
+                    على تصميم الواجهة وتجربة المستخدم وبناء الهيكل البرمجي للتطبيق، مع التخطيط لإضافة بوابات الدفع
+                    وميزات إضافية مستقبلًا.</p>
+                <p class="heading1">الحالة</p>
+                <p class="para">قيد التطوير</p>
+                <p class="heading1">الميزات الحالية</p>
+                <p class="para">استعراض المنتجات.</p>
+                <p class="para">حجز المواعيد.</p>
+                <p class="para">واجهة مستخدم متكاملة.</p>
+                <p class="para">هيكل برمجي منظم.</p>
+                <p class="heading1">الميزات المخطط لها</p>
+                <p class="para">الدفع الإلكتروني.</p>
+                <p class="para">إدارة الطلبات.</p>
+                <p class="para">إشعارات المستخدم.</p>
+        </section>
+        <section class="snap" id="storeapp1">
+            <div class="page6">
+                <p class="heading1">صور من البرنامج</p>
+                <button class="openModal glass-btn" data-img="images/storeapp/storeapp.jpeg">واجهة
+                    البرنامج</button><br><br>
+            </div>
+            <div id="imageModal" class="modal">
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <img id="modalImg" src="" alt="">
+                    <button class="close-btn" style="color: black;">×</button>
+                </div>
+            </div>
+            <script>
+                const modal = document.getElementById("imageModal");
+                const modalImg = document.getElementById("modalImg");
+                const overlay = modal.querySelector(".modal-overlay");
+                const closeBtn = modal.querySelector(".close-btn");
+
+                document.querySelectorAll(".openModal").forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        modalImg.src = btn.dataset.img;
+                        modal.style.display = "flex";
+                        document.body.style.overflow = "hidden";
+                    });
+                });
+
+                function closeModal() {
+                    modal.style.display = "none";
+                    modalImg.src = "";
+                    document.body.style.overflow = "";
+                }
+
+                closeBtn.onclick = closeModal;
+                overlay.onclick = closeModal;
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
