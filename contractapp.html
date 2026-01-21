@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <section class="snap" id="contractapp">
+            <div class="page6">
+                <p class="heading1">نظام إنشاء وإدارة العقود الإلكترونية</p>
+                <p class="para">برنامج لإنشاء العقود بشكل سريع، يتيح إدخال بيانات الطرف الأول وتفاصيل العقد وحفظه بصيغة
+                    PDF،مع إمكانية تعديل أو حذف العقود بسهولة .</p>
+                <p class="heading1">واجهة البرنامج</p>
+                <p class="para">يتميز البرنامج بواجهة بسيطة وسهلة الاستخدام، مصممة لتوفير تجربة مستخدم سلسة مع تنظيم
+                    واضح للأقسام والعناصر.</p>
+                <p class="heading1">الخصائص الرئيسية</p>
+                <p class="para">إنشاء العقود وتعديلها وحذفها بسهولة.</p>
+                <p class="para">عرض المعلومات بشكل واضح ومرتب.</p>
+                <p class="para">إمكانية البحث عن العقد للوصول السريع.</p>
+                <p class="para">تصدير العقود بصيغة ( PDF).</p>
+                <p class="heading1">صور من البرنامج</p>
+                <div>
+                    <button class="openModal glass-btn" data-img="/images/cnapp/front.png">واجهة البرنامج</button><br>
+                    <button style="margin-top: 10px;" class="openModal glass-btn" data-img="/images/cnapp/cna.png">انشاء
+                        العقد</button><br>
+                    <button style="margin-top: 10px;" class="openModal glass-btn"
+                        data-img="/images/cnapp/cna2.png">انشاء العقد 2</button><br>
+                    <button style="margin-top: 10px;" style="margin-top: 10px;" class="glass-btn"
+                        onclick="openPDF()">نموذج الـPDF المصدر</button><br>
+                    <button onclick="document.location='index.html#Projects'" class="glass-btn view-dt"
+                        style="margin-bottom: 30px;padding-bottom: 16px;margin-top: 16px;">العودة إلى المشاريع</button>
+
+
+                </div>
+                <div id="imageModal" class="modal">
+                    <div class="modal-overlay"></div>
+
+                    <div class="modal-content">
+                        <img id="modalImg" src="" alt="">
+                        <button class="close-btn" style="color: black;">×</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function openPDF() {
+                    window.open('/images/cnapp/EXcn.pdf', '_blank');
+                }
+            </script>
+            <script>
+                const modal = document.getElementById("imageModal");
+                const modalImg = document.getElementById("modalImg");
+                const overlay = modal.querySelector(".modal-overlay");
+                const closeBtn = modal.querySelector(".close-btn");
+
+                document.querySelectorAll(".openModal").forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        modalImg.src = btn.dataset.img;
+                        modal.style.display = "flex";
+                        document.body.style.overflow = "hidden";
+                    });
+                });
+
+                function closeModal() {
+                    modal.style.display = "none";
+                    modalImg.src = "";
+                    document.body.style.overflow = "";
+                }
+
+                closeBtn.onclick = closeModal;
+                overlay.onclick = closeModal;
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <section class="snap" id="plc-project">
+            <div class="page4">
+
+                <p class="heading1">نظرة عامة</p>
+                <p class="heading2">ماهو المشروع؟</p>
+                <p class="para">هو نظام تحكم لتشغيل أنظمة الجاكوزي (السخان، المُبرّد) عن طريق شاشة لمس دون تدخل يدوي.
+                </p>
+                <p class="heading1">الأهداف</p>
+                <p class="para">سهولة تشغيل النظام بالنسبة للعميل.</p>
+                <p class="para">تقليل الأخطاء البشرية في تشغيل النظام.</p>
+                <p class="para">دمج تقنية PLC كمعيار أساسي في جميع مشاريع المؤسسة المستقبلية.</p>
+                <p class="heading1">مكونات النظام</p>
+                <p class="heading2">النظام يتكون من:</p>
+                <p class="para">
+                    وحدة تحكم PLC.
+                </p>
+                <p class="para">
+                    شاشة تشغيل HMI تعمل باللمس.
+                </p>
+                <p class="para">
+                    جهاز لبرمجة الشاشة و وحدة التحكم.
+                </p>
+                <section class="snap" id="plc-details">
+                    <p class="heading1">مميزات النظام</p>
+                    <p class="para">واجهة مستخدم سهلة وواضحة.</p>
+                    <p class="para">تسلسل تشغيل آمن.</p>
+                    <p class="para">التقليل من الأخطاء البشرية.</p>
+                    <p class="para">منع التشغيل الخاطئ.</p>
+                    <p class="heading1">التحديات والحلول</p>
+                    <div>
+                        <table>
+                                <th>التحديات</th>
+                                <th>الحلول</th>
+                                <tr>
+                                    <td>مشكلة الاتصال “Device not respond”</td>
+                                    <td>إضافة كود برمجي + كيبل خاص للشاشة ووحدة التحكم.</td>
+                                </tr>
+                                <tr>
+                                    <td>اللغة العربية لا تظهر في الشاشة (غير مدعومة)</td>
+                                    <td>تصميم صورة ووضعها في الشاشة بدل الكتابة من داخل برنامج الشاشة.</td>
+                                </tr>
+                                <tr>
+                                    <td>مشكلة الأزرار لا تعمل</td>
+                                    <td>استخدام منطق OR في البرمجة.</td>
+                                </tr>
+                                <tr>
+                                    <td>مشكلة في المؤقتات بأنها تطفى فجأة</td>
+                                    <td>استخدام آلية ”Self-Hold".</td>
+                                </tr>
+                        </table><br>
+                        <p class="para">"Self-Hold" هي آلية برمجية تُستخدم للاحتفاظ بحالة التشغيل بعد تفعيلها، حتى بعد
+                            ترك
+                            زر التشغيل.</p>
+                        <p class="heading1">التطويرات المستقبلية</p>
+                        <p class="para">ربط بالإنترنت للمراقبة عن بعد.</p>
+                        <p class="para">تطبيق جوال للتحكم عن بعد من أي مكان.</p>
+                    </div><br><br>
+                    <div>
+                        <button onclick="document.location='index.html#Projects'" class="glass-btn view-dt"
+                            style="margin-bottom: 30px;padding-bottom: 16px;">العودة إلى المشاريع</button>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

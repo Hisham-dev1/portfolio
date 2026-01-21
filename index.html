@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.10.19/interact.min.js"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="snap" id="home">
+        <div class="page1">
+            <h1 class="name">هشام صالح الصالح</h1><br>
+            <h1 class="title">مبرمج ومطوّر مواقع الويب وتطبيقات الجوال - مصمم UI/UX</h1><br>
+            <h1 class="major">تقنية البرمجة وتطوير الويب</h1><br>
+            <h1 class="about">متخصص في بناء تطبيقات ويب وتطبيقات جوال عملية، مع التركيز على الأداء العالي وتجربة مستخدم
+                سلسة.
+            </h1>
+            <div class="parent1">
+                <div rt-liquid-glass class="bordered glass pdf-btn" onclick="openPDF()">
+                    <p class="cv">عرض السيرة الذاتية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="snap" id="about">
+        <div class="text-center">
+            <p class="p">خريج تقنية برمجة الحاسب وتطوير الويب،</p>
+            <p class="p"> متخصص في تطوير تطبيقات الويب وتطبيقات الجوال.</p>
+            <p class="p"> لدي خبرة في بناء أنظمة إدارية ولوحات تحكم، وأسعى لتقديم حلول تقنية عملية وقابلة للتوسع.</p>
+        </div><br>
+        <div class="page2">
+            <p class="aside">برمجة الويب :</p>
+            <p>ASP.NET CORE MVC</p>
+            <p>HTML, CSS</p>
+            <p class="aside">برمجة تطبيقات الجوال :</p>
+            <p>إطار عمل Flutter</p>
+            <p>لغة Dart</p>
+            <p class="aside">برمجة الحاسب :</p>
+            <p>لغة C#</p>
+            <p>لغة Python</p>
+            <p>لغة PHP</p>
+            <p class="aside">الأتمتة والأدوات :</p>
+            <p>PLC (Ladder Logic)</p>
+            <p>HMI System</p>
+        </div>
+    </section>
+    <section class="snap" id="Projects">
+        <div class="page3 text-center">
+            <p class="p">مشاريعي</p>
+            <p class="p">مجموعة من المشاريع التي عملت عليها في تطوير تطبيقات الويب وتطبيقات الجوال</p>
+        </div>
+        <div class="wrapper text-center">
+            <div rt-liquid-glass class="card1 box liquid-glass">
+                <p style="padding-top: 50px;font-size: 20px;">نظام التحكم الصناعي باستخدام PLC و واجهة HMI</p>
+                <p style="padding-top: 40px;font-size: 18px;">نظام تحكم صناعي
+                    لتشغيل أنظمة الجاكوزي آليًا
+                    باستخدام PLC وواجهة HMI
+                    تعمل باللمس.</p>
+                <button onclick="document.location='plc.html'" class="glass-btn view-dt"
+                    style="margin-top: 30px;padding-bottom: 16px;">عرض التفاصيل</button>
+            </div>
+            <div rt-liquid-glass class="box liquid-glass">
+                <img src="/images/emplist.png" alt="Project" class="project-image" style="padding-top: 50px;">
+                <p style="padding-top: 22px;font-size: 20px;">نظام تقييم اداء الموظفين</p>
+                <p>نظام ويب لتقييم أداء الموظفين
+                    بشكل منظم مع تقارير ورسوم بيانية.</p>
+                <button class="glass-btn view-dt" onclick="document.location='emp.html'">عرض التفاصيل</button>
+            </div>
+            <div rt-liquid-glass class="box liquid-glass">
+                <img src="/images/cnapp.png" alt="Project" class="project-image" style="padding-top: 55px;">
+                <p style="padding-top: 22px;font-size: 20px;">نظام إنشاء وإدارة العقود الإلكترونية</p>
+                <p>نظام ويب لإنشاء وإدارة العقود الإلكترونية
+                    مع إمكانية تصديرها بصيغة PDF.</p>
+                <button class="glass-btn view-dt" onclick="document.location='contractapp.html'">عرض التفاصيل</button>
+            </div>
+            <div rt-liquid-glass class="box liquid-glass">
+                <img src="/images/apapp.png" alt="Project" class="project-image" style="padding-top: 50px;">
+                <p style="padding-top: 22px;font-size: 20px;">نظام إدارة المواعيد</p>
+                <p style="padding-right: 16px;">نظام إلكتروني لتنظيم وإدارة المواعيد
+                    وربطها بالموظفين.</p>
+                <button class="glass-btn view-dt" onclick="document.location='appoiapp.html'">عرض التفاصيل</button>
+            </div>
+            <div rt-liquid-glass class="box liquid-glass">
+                <img src="/images/mobapp.png" alt="Project" class="project-image"
+                    style="padding-top: 50px; width: 60%;">
+                <p style="padding-top: 22px;font-size: 16px;">تطبيق حساب تكاليف إنشاء المسابح</p>
+                <p>تطبيق جوال لحساب تكاليف إنشاء المسابح
+                    بناءً على الأبعاد الهندسية.</p>
+                <button class="glass-btn view-dt">عرض التفاصيل</button>
+            </div>
+            <div rt-liquid-glass class="box liquid-glass">
+                <img src="/images/storeapp.png" alt="Project" class="project-image"
+                    style="padding-top: 50px; width: 49%;">
+                <p style="padding-top: 22px;font-size: 16px;">تطبيق متجر إلكتروني مع حجز المواعيد</p>
+                <p>نموذج تطبيق متجر إلكتروني
+                    يتيح استعراض المنتجات وحجز المواعيد.</p>
+                <button class="glass-btn view-dt">عرض التفاصيل</button>
+            </div>
+        </div>
+    </section>
+    <div id="mobileWarning">
+        <div class="warning-box">
+            <button class="close-btn" onclick="closeWarning()">×</button>
+            <h2>📱 تنبيه</h2>
+            <p>لأفضل تجربة، نوصي بفتح الموقع من لابتوب أو كمبيوتر.</p>
+            <button class="main-btn" onclick="closeWarning()">متابعة</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@rethink-js/rt-liquid-glass@latest/dist/index.min.js"></script>
+    <script>
+        function openPDF() {
+            window.open('/cv.pdf', '_blank');
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const warning = document.getElementById("mobileWarning");
+
+            const isMobile =
+                /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+                window.innerWidth <= 768;
+
+            if (isMobile && !localStorage.getItem("mobileWarned")) {
+                warning.style.display = "flex";
+            }
+        });
+
+        function closeWarning() {
+            localStorage.setItem("mobileWarned", "true");
+            document.getElementById("mobileWarning").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
