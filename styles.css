@@ -25,7 +25,7 @@ html {
 
 @font-face {
     font-family: 'WebFont';
-    src: url(/fonts/ParastooSwashes.otf);
+    src: url(fonts/ParastooSwashes.otf);
 }
 
 body {
