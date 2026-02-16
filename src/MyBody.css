@@ -1,0 +1,9 @@
+.section-divider {
+  width: 20%;
+  height: 3px;
+  background-color: #4A4032; /* بني غامق */
+  margin-top: 20px;
+  border-radius: 16px;
+  text-align: center;
+  justify-content: center;
+}

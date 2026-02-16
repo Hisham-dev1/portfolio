@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+body {
+  padding: 16px;
+  font-family: "Zain";
+  background-color: rgba(214, 196, 161, 0.5);
+  color: #4a4032;
+}
+html{
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Zain";
+  src: url("/public/Zain.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

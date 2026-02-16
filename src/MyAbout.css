@@ -1,0 +1,40 @@
+.btn-1{
+    padding:10px;
+    background-color: #7a8b5a;
+    width: 120px;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    border: white 3px solid;
+    margin-right: 5px;
+}
+.btn-2{
+    padding:10px;
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    color: #4a4032;
+    border-radius: 16px;
+    border: #7a8b5a 3px solid;
+    margin-right: 5px;
+}
+.btn-2asp{
+    padding:10px;
+    background-color: white;
+    width: 210px;
+    text-align: center;
+    color: #4a4032;
+    border-radius: 16px;
+    border: #7a8b5a 3px solid;
+    margin-right: 5px;
+}
+.btn-1fi{
+    padding:10px;
+    background-color: #7a8b5a;
+    width: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    border: white 3px solid;
+    margin-right: 5px;
+}
