@@ -4,6 +4,7 @@ import MyInfo from "./MyInfo";
 import MyNavbar from "./MyNavbar";
 import "./MyBody.css";
 import MyProjects from "./MyProjects";
+import MyFooter from "./MyFooter";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <MyProjects />
         </section>
       </div>
+      <MyFooter/>
     </div>
   );
 }
