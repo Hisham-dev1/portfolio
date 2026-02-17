@@ -7,7 +7,7 @@ export default function MyInfo() {
         <MyButton name="Linked in" href="https://www.linkedin.com/in/hisham-alsaleh">
           <i class="bi bi-linkedin" style={{ marginRight: "5px" }}></i>
         </MyButton>
-        <MyButton href="+966592752374" name="Phone">
+        <MyButton href="tel:+966592752374" name="Phone">
           <i class="bi bi-telephone-fill" style={{ marginRight: "5px" }}></i>
         </MyButton>
         <MyButton href="mailto:hishamsaleh74@outlook.com" name="Email">
